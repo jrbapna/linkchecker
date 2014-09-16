@@ -374,16 +374,16 @@ class _Logger (object):
             self.log_url(url_data)
 
     def write_intro (self):
-        """Write intro comments."""
-        self.comment(_("created by %(app)s at %(time)s") %
-                    {"app": configuration.AppName,
-                     "time": strformat.strtime(self.starttime)})
-        self.comment(_("Get the newest version at %(url)s") %
-                     {'url': configuration.Url})
-        self.comment(_("Write comments and bugs to %(url)s") %
-                     {'url': configuration.SupportUrl})
-        self.comment(_("Support this project at %(url)s") %
-                     {'url': configuration.DonateUrl})
+        # """Write intro comments."""
+        # self.comment(_("created by %(app)s at %(time)s") %
+        #             {"app": configuration.AppName,
+        #              "time": strformat.strtime(self.starttime)})
+        # self.comment(_("Get the newest version at %(url)s") %
+        #              {'url': configuration.Url})
+        # self.comment(_("Write comments and bugs to %(url)s") %
+        #              {'url': configuration.SupportUrl})
+        # self.comment(_("Support this project at %(url)s") %
+        #              {'url': configuration.DonateUrl})
         self.check_date()
 
     def write_outro (self):

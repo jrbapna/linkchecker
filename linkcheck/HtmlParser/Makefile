@@ -26,4 +26,3 @@ clean:
 
 distclean: clean
 	rm -f htmlparse.c htmlparse.h htmllex.c
-

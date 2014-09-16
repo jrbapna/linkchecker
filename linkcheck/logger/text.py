@@ -93,14 +93,14 @@ class TextLogger (_Logger):
 
     def write_intro (self):
         """Log introduction text."""
-        self.writeln(configuration.AppInfo)
-        self.writeln(configuration.Freeware)
-        self.writeln(_("Get the newest version at %(url)s") %
-                     {'url': configuration.Url})
-        self.writeln(_("Write comments and bugs to %(url)s") %
-                     {'url': configuration.SupportUrl})
-        self.writeln(_("Support this project at %(url)s") %
-                     {'url': configuration.DonateUrl})
+        # self.writeln(configuration.AppInfo)
+        # self.writeln(configuration.Freeware)
+        # self.writeln(_("Get the newest version at %(url)s") %
+        #              {'url': configuration.Url})
+        # self.writeln(_("Write comments and bugs to %(url)s") %
+        #              {'url': configuration.SupportUrl})
+        # self.writeln(_("Support this project at %(url)s") %
+        #              {'url': configuration.DonateUrl})
         self.check_date()
         self.writeln()
         self.writeln(_("Start checking at %s") %

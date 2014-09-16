@@ -100,8 +100,8 @@ localbuild: MANIFEST locale
 	$(MAKE) -C doc/html
 	$(MAKE) -C linkcheck/HtmlParser
 	$(PYTHON) setup.py build
-	cp -f build/lib.$(PLATFORM)-$(PYVER)*/linkcheck/HtmlParser/htmlsax*.so linkcheck/HtmlParser
-	cp -f build/lib.$(PLATFORM)-$(PYVER)*/linkcheck/network/_network*.so linkcheck/network
+# cp -f build/lib.$(PLATFORM)-$(PYVER)*/linkcheck/HtmlParser/htmlsax*.so linkcheck/HtmlParser
+# cp -f build/lib.$(PLATFORM)-$(PYVER)*/linkcheck/network/_network*.so linkcheck/network
 
 release: distclean releasecheck filescheck
 	$(MAKE) dist sign register upload homepage tag changelog deb
@@ -161,8 +161,8 @@ dist: locale MANIFEST chmod
 	[ ! -f ../$(ARCHIVE_WIN32) ] || cp ../$(ARCHIVE_WIN32) dist
 
 # Build OSX installer with py2app
-app: distclean localbuild chmod
-	$(PYTHON) setup.py py2app $(PY2APPOPTS)
+# app: distclean localbuild chmod
+# 	$(PYTHON) setup.py py2app $(PY2APPOPTS)
 
 # Build RPM installer with cx_Freeze
 rpm:
@@ -241,8 +241,8 @@ dnsdiff:
 changelog:
 	github-changelog $(DRYRUN) $(GITUSER) $(GITREPO) doc/changelog.txt
 
-gui:
-	$(MAKE) -C linkcheck/gui
+# gui:
+# 	$(MAKE) -C linkcheck/gui
 
 count:
 	@sloccount linkchecker linkchecker-gui linkcheck tests
