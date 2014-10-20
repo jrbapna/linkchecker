@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "linkchecker";
+  src:url("fonts/linkchecker.eot");
+  src:url("fonts/linkchecker.eot?#iefix") format("embedded-opentype"),
+    url("fonts/linkchecker.woff") format("woff"),
+    url("fonts/linkchecker.ttf") format("truetype"),
+    url("fonts/linkchecker.svg#linkchecker") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "linkchecker" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="lc-"]:before,
+[class*=" lc-"]:before {
+  font-family: "linkchecker" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lc-fire:before {
+  content: "a";
+}
+.lc-cup:before {
+  content: "b";
+}
+.lc-cloud:before {
+  content: "c";
+}
+.lc-clip:before {
+  content: "d";
+}
+.lc-star:before {
+  content: "e";
+}
+.lc-settings:before {
+  content: "f";
+}
+.lc-search:before {
+  content: "g";
+}
+.lc-mail:before {
+  content: "h";
+}
+.lc-megaphone:before {
+  content: "i";
+}
+.lc-tag:before {
+  content: "j";
+}
+.lc-video:before {
+  content: "k";
+}
+.lc-photo:before {
+  content: "l";
+}
+.lc-chart-area:before {
+  content: "m";
+}
+.lc-cog:before {
+  content: "n";
+}
+.lc-eye:before {
+  content: "o";
+}
+.lc-flag:before {
+  content: "p";
+}
+.lc-flash:before {
+  content: "q";
+}
+.lc-folder:before {
+  content: "r";
+}
+.lc-db-shape:before {
+  content: "s";
+}
+.lc-share:before {
+  content: "t";
+}
+.lc-monitor:before {
+  content: "u";
+}
+.lc-mobile:before {
+  content: "v";
+}
+.lc-pencil:before {
+  content: "w";
+}
+.lc-sound:before {
+  content: "x";
+}
+.lc-share-1:before {
+  content: "y";
+}
+.lc-chevron-right:before {
+  content: "z";
+}
+.lc-chevron-left:before {
+  content: "A";
+}
+.lc-chevron-up:before {
+  content: "B";
+}
+.lc-chevron-down:before {
+  content: "C";
+}
+.lc-check-square:before {
+  content: "D";
+}
+.lc-cloud-filled:before {
+  content: "E";
+}
+.lc-plus:before {
+  content: "F";
+}
+.lc-plus-circle:before {
+  content: "G";
+}
+.lc-plus-square:before {
+  content: "H";
+}
+.lc-screen-desktop:before {
+  content: "I";
+}
+.lc-square-line:before {
+  content: "J";
+}
+.lc-square:before {
+  content: "K";
+}
+.lc-cloud-2:before {
+  content: "L";
+}
+.lc-email:before {
+  content: "M";
+}
+.lc-locked-1:before {
+  content: "N";
+}
+.lc-unlocked:before {
+  content: "O";
+}
+.lc-broken-link:before {
+  content: "P";
+}
+.lc-working-link:before {
+  content: "Q";
+}
